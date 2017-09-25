@@ -22,7 +22,7 @@ def get_url_from_page(url):
         return get_url_from_content(r.text)
     return []
 def producer_job():
-    for i in range(0, 10):
+    for i in range(0, 1):
         url = "https://www.doutula.com/photo/list/?page=" + str(i + 1)
         url_list = get_url_from_page(url)
         for it in url_list:
